@@ -1,0 +1,56 @@
+<!-- admin-nav ejs -->
+
+<div class="admin-nav d-flex flex-column justify-content-between">
+    <div class="admin-logo">
+        <h1 class="p-32 m-40"><a class="logo-link" href="#">Answer</a></h1>
+        <ul class="list-group d-flex">
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32 d-block"><span class="material-icons pe-3">
+                        insert_chart
+                    </span>Dashboard</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span class="material-icons pe-3">
+                        forum
+                    </span>Question</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="assignment.html"
+                    class="admin-item fw-bold d-flex p-32 <%= page === 'assignment' ? 'text-success border-start border-4 border-success' : 'text-gray-900' %>"><span
+                        class="material-icons pe-3">
+                        assignment
+                    </span>Assignment</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span class="material-icons pe-3">
+                        video_library
+                    </span>Course</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <!-- 注意 admin-item 內的三元表達式 -->
+                <a href="index.html"
+                    class="admin-item fw-bold d-flex p-32 
+                    <%= page === 'admin' ? 'text-success border-start border-4 border-success' : 'text-gray-900' %>"><span
+                        class="material-icons pe-3">
+                        group
+                    </span>Admin</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span
+                        class="material-icons pe-3 <%= page === 'setting' ? 'text-success border-start border-4 border-success' : 'text-gray-900' %>">
+                        settings
+                    </span>Settings</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex p-32">
+        <div class="d-flex align-items-center me-3">
+            <img class="admin-photo rounded-circle" src="../assets/images/andychen.jpeg" alt="admin-photo">
+        </div>
+        <div class="d-flex flex-column">
+            <h6 class="fw-bold mb-0 gray-color-900">Andy Chen</h6>
+            <a title="contact me" class="mail-link gray-color-600 d-block"
+                href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+        </div>
+    </div>
+</div>

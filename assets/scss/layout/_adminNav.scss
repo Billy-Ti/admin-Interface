@@ -1,0 +1,47 @@
+.admin-nav {
+    width: 296px;
+    height: auto;
+    background-color: $gray-100;
+
+    // 清除 BS 預設值
+    .list-group-item {
+        border-radius: 0;
+        border: 0;
+        background-color: inherit;
+    }
+
+    .logo-link {
+        display: block;
+        background-image: url(../images/logo-ANSWER.svg);
+        background-size: cover;
+        width: 151px;
+        height: 40px;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    // 使用 BS 變數顏色
+    .admin-item {
+        color: $gray-900;
+        border-left: 4px solid transparent;
+        transition: .5s;
+
+        &:hover {
+            border-left-color: $success;
+        }
+    }
+
+    .admin-photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mail-link {
+        transition: .8s;
+
+        &:hover {
+            color: $gray-900;
+        }
+    }
+}

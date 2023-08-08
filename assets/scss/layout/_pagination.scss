@@ -1,0 +1,13 @@
+.pagination {
+    --bs-pagination-border-color: #198754;
+    --bs-pagination-hover-border-color: #198754;
+    --bs-pagination-focus-box-shadow: #198754;
+
+    .page-item {
+        margin-left: -1px;
+    }
+
+    .page-link:hover {
+        z-index: 0;
+    }
+}
