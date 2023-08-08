@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- icon -->
+  <!-- <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- 引入編譯後的 .css 檔 -->
+  <link rel="stylesheet" href="../assets/scss/css/all.css">
+
+  <title>backgroundInterface</title>
+  <script type="module" crossorigin src="/admin-Interface/assets/main-fb32856e.js"></script>
+  <link rel="stylesheet" href="/admin-Interface/assets/main-4ee8f734.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <!-- admin-nav -->
+
+    <!--注意引入 ejs 的判斷式-->
+    <!-- admin-nav ejs -->
+
+<div class="admin-nav d-flex flex-column justify-content-between">
+    <div class="admin-logo">
+        <h1 class="p-32 m-40"><a class="logo-link" href="#">Answer</a></h1>
+        <ul class="list-group d-flex">
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32 d-block"><span class="material-icons pe-3">
+                        insert_chart
+                    </span>Dashboard</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span class="material-icons pe-3">
+                        forum
+                    </span>Question</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="assignment.html"
+                    class="admin-item fw-bold d-flex p-32 text-gray-900"><span
+                        class="material-icons pe-3">
+                        assignment
+                    </span>Assignment</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span class="material-icons pe-3">
+                        video_library
+                    </span>Course</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <!-- 注意 admin-item 內的三元表達式 -->
+                <a href="index.html"
+                    class="admin-item fw-bold d-flex p-32 
+                    text-success border-start border-4 border-success"><span
+                        class="material-icons pe-3">
+                        group
+                    </span>Admin</a>
+            </li>
+            <li class="list-group-item p-0 mb-28">
+                <a href="#" class="admin-item fw-bold d-flex p-32"><span
+                        class="material-icons pe-3 text-gray-900">
+                        settings
+                    </span>Settings</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex p-32">
+        <div class="d-flex align-items-center me-3">
+            <img class="admin-photo rounded-circle" src="/admin-Interface/assets/andychen-f14fef59.jpeg" alt="admin-photo">
+        </div>
+        <div class="d-flex flex-column">
+            <h6 class="fw-bold mb-0 gray-color-900">Andy Chen</h6>
+            <a title="contact me" class="mail-link gray-color-600 d-block"
+                href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+        </div>
+    </div>
+</div>
+      <!-- admin-page -->
+      <div class="admin-page">
+        <div class="admin-titleText d-flex align-items-center mb-5">
+          <h2 class="me-5 fw-bold gray-color-900 mb-0">Admin</h2>
+          <div class="add-admin d-flex align-items-center">
+            <a title="Add" class="d-flex align-items-center" href=""><span class="material-icons add-icon pe-2">
+                add
+              </span>
+              <span class="add-link fw-bold gray-color-900">Add New Admin</span></a>
+          </div>
+          <div class="d-flex align-items-center ms-auto">
+            <a title="search" class="search gray-color-900" href="#"><span class="material-icons pe-4">
+                search
+              </span></a>
+            <a title="advice" class="advice gray-color-900" href="#"><span class="material-icons">
+                notifications_active
+              </span></a>
+          </div>
+        </div>
+
+        <div class="admin-list mb-64">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th class="test ps-0 d-flex align-items-center" scope="col">ID
+                  <span class="icon-arrow-downward material-icons ps-2">
+                    arrow_downward_alt
+                  </span>
+                </th>
+                <th class="py-1 ps-0" scope="col">Name</th>
+                <th class="py-1 ps-0" scope="col">Email</th>
+                <th class="py-1 ps-0" scope="col">Verified</th>
+                <th class="py-1 ps-0" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4  text-right" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="d-flex px-0 justify-content-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <span class="material-icons cursor me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    visibility
+                  </span><span class="material-icons cursor">
+                    edit
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+
+              <div class="modal-header align-items-start p-0">
+                <img src="/admin-Interface/assets/emir-3d7a4b39.jpeg" class="modal-img border-radius-2 me-4" alt="emir-pic">
+
+                <div class="d-flex flex-column w-100">
+                  <div class="d-flex align-items-center">
+                    <span class="gray-color-900 pb-2 d-inline-block">#1</span>
+                    <button type="button" class="btn-close d-inline-block" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <p class="gray-color-900 mb-0 ">Admin</p>
+                  <p class="gray-color-900 fw-bold fz-24 mb-2">Emir Wicks</p>
+                  <a class="gray-color-600 mb-20" href="mailto: emir.wicks@mail.com">emir.wicks@mail.com</a>
+
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <div class="d-flex">
+                        <span class="accordion-header bg-light" id="flush-headingOne">Verified
+                        </span>
+                        <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        </button>
+                      </div>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+
+                        <div class="accordion-body d-flex justify-content-between">
+
+                          <button type="button"
+                            class="btn btn-outline-danger admin-btn border-radius-2 fw-bold p-32 py-2 me-3 mt-5">Deactivate
+                          </button>
+
+                          <button type="button" class="btn btn-success admin-btn border-radius-2 fw-bold p-32 py-8 mt-5"
+                            data-bs-toggle="modal" data-bs-target="#modalEdit">Edit
+                          </button>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- pagination -->
+        <!-- pagination -->
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end align-items-center">
+        <li class="page-item">
+            <a class="page-link text-success" href="#" aria-label="Previous">
+                <span class="material-icons sr-only d-flex align-items-center">
+                    navigate_before
+                </span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link text-success d-block" href="#">1</a>
+        </li>
+        <li class="page-item "><a class="page-link text-success d-block" href="#">2</a></li>
+        <li class="page-item "><a class="page-link text-success d-block" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link text-success" href="#" aria-label="Next">
+                <span class="material-icons sr-only d-flex align-items-center">
+                    navigate_next
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>      </div>
+  </div>
+
+
+
+
+
+  <!-- 引入 bootstrap 的 js 檔 -->
+  <script src="../bootstrap.bundle.min.js"></script>
+  
+
+</body>
+
+</html>
