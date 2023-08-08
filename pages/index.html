@@ -34,7 +34,7 @@
 
       <!-- admin-page -->
       <div class="admin-page">
-        <div class="admin-titleText d-flex align-items-center mb-5">
+        <div class="admin-titleText align-items-center mb-5">
           <h2 class="me-5 fw-bold gray-color-900 mb-0">Admin</h2>
           <div class="add-admin d-flex align-items-center">
             <a title="Add" class="d-flex align-items-center" href=""><span class="material-icons add-icon pe-2">
@@ -271,7 +271,13 @@
 
 
   <!-- 引入 bootstrap 的 js 檔 -->
-  <script src="../bootstrap.bundle.min.js"></script>
+
+  <!-- 使用相對路徑，GitHub Pages 無法抓到該檔案，要使用 CDN  -->
+  <!-- <script src="/bootstrap.bundle.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
   <script type="module" src="../main.js"></script>
 
 </body>
