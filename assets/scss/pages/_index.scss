@@ -1,0 +1,93 @@
+// admin-page
+.admin-page {
+    width: calc(100% - 296px);
+    padding: 32px;
+
+    .add-icon {
+        color: $success;
+    }
+
+    .search,
+    .advice:hover {
+        color: $gray-600;
+    }
+
+    .add-link:hover {
+        color: $success;
+    }
+
+    .admin-list {
+
+        // 清除 BS 預設值 ( 第一條線 )
+        .test {
+            border-bottom-width: 0;
+        }
+
+        thead {
+            tr {
+                border-bottom: 3px solid $gray-600;
+
+                &th:first-child {
+                    border-bottom-width: 0;
+
+                }
+            }
+        }
+
+        tbody {
+
+            th,
+            td {
+                font-weight: 400;
+                padding: 16px 0;
+            }
+        }
+
+        .icon-arrow-downward {
+            font-size: 16px;
+            color: $success;
+        }
+
+        .table-icon:hover {
+            color: $success;
+        }
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+}
+
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-img {
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+
+.modal-content {
+    padding: 32px;
+}
+
+.accordion-button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-left: auto;
+}
+
+.admin-btn {
+    border-radius: 2px;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0;
+    --bs-accordion-active-bg: #fff;
+}
